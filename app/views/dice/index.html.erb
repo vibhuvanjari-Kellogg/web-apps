@@ -1,15 +1,17 @@
 <h1>Welcome to Dice</h1>
 
-<h2>Dice 1:</h2>
+<% die1 = rand(1..6) %>
+<% die2 = rand(1..6) %>
 
 <p>
-You rolled: <%= rand(1..6) %>
+You rolled: <%= die1 %> and <%= die2 %> a total of <%= die1 + die2%>
 </p>
 
-<h2>Dice 2:</h2>
+<h2>Dice:</h2>
+
+<img src = "images/dice/<%= die1%>.svg">
+<img src = "images/dice/<%= die2%>.svg">
 
 <p>
-You rolled: <%= rand(1..6) %>
-</p>
-
 <a href = "https://3000-vibhuvanjarikel-webapps-0sr3v5m04hn.ws-us117.gitpod.io/dice"> Roll Again!! </a>
+</p>
